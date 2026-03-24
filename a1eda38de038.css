@@ -1,0 +1,134 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    color: #595959
+}
+
+.header-wrapper {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 86px;
+    *height: 40px;
+    padding: 34px 0
+}
+
+.header-wrapper .brand {
+    float: left;
+    height: 40px
+}
+
+.header-wrapper .brand img {
+    height: 100%
+}
+
+.header-wrapper .sub-title {
+    float: left;
+    padding: 4px 0 0 6px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.header-wrapper .language {
+    position: relative;
+    z-index: -10;
+    float: right;
+    width: auto;
+    padding: 8px 0;
+}
+
+.header-wrapper .language a {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    z-index: -10;
+}
+
+.header-wrapper .language em {
+    font-style: normal;
+    z-index: -10;
+}
+
+.language-arrow {
+    z-index: -10;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transform-origin: 50% 30.000002%;
+    transform-origin: 50% 30.000002%;
+    transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform
+}
+
+.language-arrow--em {
+    position: absolute;
+    z-index: -10;
+    top: 2px;
+    left: 0;
+    width: 0;
+    border-width: 4px 4px 0;
+    border-style: solid;
+    border-color: #666666 transparent transparent;
+    overflow-x: hidden;
+}
+
+.language:hover .language-arrow {
+    z-index: -10;
+    top: 0px;
+    top: 0 \9;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.language .lang {
+    z-index: -99;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 140px;
+    height: 330px;
+    margin-top: -1px;
+    padding: 4px 0;
+    border: 1px solid #CECECE;
+    background-color: #FFFFFF;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.language .lang ul, .language .lang li {
+    z-index: -10;
+}
+
+.language .lang ul li a {
+    display: block;
+    height: 25px;
+    padding: 0 10px;
+    line-height: 25px;
+    white-space: nowrap;
+    color: #292E41;
+    background-color: #FFFFFF;
+}
+
+.language .lang ul li a:hover {
+    background-color: #E8E9EF
+}
+
+.language:hover .lang {
+    display: block
+}
+.main-btn{
+    color: #1897F2;
+}
